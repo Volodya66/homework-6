@@ -743,6 +743,7 @@ img {
 
 .name-imput {
   display: block;
+  /* width: 14px; */
   margin-bottom: 4px;
 
   color: var(--light-stele);
@@ -784,13 +785,16 @@ img {
   padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-bottom: 16px;
 
   transition-property: border-color;
   text-decoration: var(--transition-duration);
   transition-timing-function: var(--transition-duration);
 }
-
+.texteria-margin {
+  display: block;
+  height: 138px;
+  margin-bottom: 16px;
+}
 .modal-texteria::placeholder {
   font-style: normal;
   font-size: 12px;
