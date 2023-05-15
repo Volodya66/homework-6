@@ -593,6 +593,10 @@ img {
 
 /* div social */
 
+.social-container {
+  margin-right: 80px;
+}
+
 .social-footer {
   color: var(--white-kolor);
   font-style: normal;
@@ -634,6 +638,82 @@ img {
 .icon-footer:hover,
 .icon-footer:focus {
   background-color: #31d0aa;
+}
+
+/* -------- div Subscribe --------*/
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.text-subscribe {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-kolor);
+  margin-bottom: 16px;
+}
+
+.imput-email-footer {
+  padding: 8px 0 8px 16px;
+  width: 264px;
+  height: 40px;
+  color: var(--white-kolor);
+
+  background-color: transparent;
+  border: 1px solid var(--white-kolor);
+  border-radius: 4px;
+}
+
+.footer-subscribe {
+  width: 165px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  cursor: pointer;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  column-gap: 16px;
+
+  background-color: var(--iris-web);
+
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.footer-subscribe:hover,
+.footer-subscribe:focus {
+  background-color: var(--hover-focus);
+}
+
+.text-subscribe-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-kolor);
+}
+
+.imput-email-footer::placeholder {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  color: var(--white-kolor);
+}
+
+.icon-telegr {
+  fill: var(--white-kolor);
 }
 
 /* ----- Modal window ----- */
@@ -825,7 +905,36 @@ img {
   transition-timing-function: var(--transition-duration);
 }
 
+.icon-policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 3px;
+
+  fill: #f4f4fd;
+  background-color: var(--white-kolor);
+
+  cursor: pointer;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.checkbox-checked:checked + .icon-policy {
+  background-color: var(--ocean-color);
+  border-color: var(--ocean-color);
+}
+
 .privacy-policy-text {
+  align-items: center;
+
+  display: flex;
   font-style: normal;
   font-size: 12px;
   line-height: 1.17;
@@ -853,6 +962,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 
   padding: 16px 32px;
   width: 169px;
