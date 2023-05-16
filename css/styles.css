@@ -896,9 +896,9 @@ img {
 .cvg-persona {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 16px;
   transform: translateY(-50%);
-  margin-left: 16px;
+  fill: #2e2f42;
 
   transition-property: fill;
   text-decoration: var(--transition-duration);
@@ -906,27 +906,27 @@ img {
 }
 
 .icon-policy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 3px;
-
   fill: #f4f4fd;
-  background-color: var(--white-kolor);
+}
 
-  cursor: pointer;
-  margin-right: 8px;
+.wrapper-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
+  background-color: var(--white-kolor);
+  margin-right: 8px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
 
   transition-property: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-function);
 }
 
-.checkbox-checked:checked + .icon-policy {
+.checkbox-checked:checked + .wrapper-policy {
   background-color: var(--ocean-color);
   border-color: var(--ocean-color);
 }
